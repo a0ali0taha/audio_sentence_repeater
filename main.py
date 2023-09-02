@@ -1,5 +1,5 @@
 
-def process_audio(input_file, output_file):
+def process_audio(input_file, output_file, downloaded=False):
     from conacat import duplicate_and_concatenate_audio
     import os
     import subprocess
@@ -12,4 +12,6 @@ def process_audio(input_file, output_file):
     subprocess.run(command, shell=True)
     split(splited_folder,input_file)
     duplicate_and_concatenate_audio(splited_folder,output_file)
+    if downloaded:
+        os.remove(input_file)
     return "Audio processing complete."
