@@ -1,0 +1,2 @@
+# This project uses the following command-line tools:
+# - ffmpeg
