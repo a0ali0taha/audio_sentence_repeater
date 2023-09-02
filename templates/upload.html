@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Audio</title>
+</head>
+<body>
+    <form action="/process_audio" method="post" enctype="multipart/form-data">
+        <label for="file">Upload audio file:</label>
+        <input type="file" id="file" name="file"><br>
+        <label for="url">Or enter audio file URL:</label>
+        <input type="text" id="url" name="url"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
