@@ -14,8 +14,7 @@ def process_audio_route():
 @app.route('/list_audio', methods=['GET'])
 def list_audio():
     audio_files = get_processed_audio_files()
-    for audio_file in audio_files:
-        os.remove(audio_file)
+    
     return jsonify(audio_files)
 
 if __name__ == '__main__':
