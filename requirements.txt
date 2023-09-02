@@ -1,2 +1,4 @@
-# This project uses the following command-line tools:
-# - ffmpeg
+Flask==2.0.1
+requests==2.26.0
+pandas==1.3.3
+ffmpeg
